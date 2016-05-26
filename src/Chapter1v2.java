@@ -54,7 +54,7 @@ public class Chapter1v2 {
 
     //3. Числа, которые делятся на 3 или на 9.
 
-    public static void main(String[] args) {
+    /*public static void main(String[] args) {
         int[] numbers = new int[10];
         System.out.println("Исходный массив:");
         for (int i = 0; i < 10; i++) {
@@ -76,11 +76,92 @@ public class Chapter1v2 {
                 System.out.print(i + " ");
             }
         }
-    }
+    }*/
 
     //4. Числа, которые делятся на 5 и на 7.
+
+    /*public static void main(String[] args) {
+        int[] numbers = new int[10];
+        System.out.println("Исходный массив:");
+        for (int i = 0; i < 10; i++) {
+            numbers[i]=(int)(Math.random()*100);
+            System.out.print(numbers[i] + " ");
+
+        }
+        System.out.println();
+        System.out.println("Multiples of 5:");
+        for (int i: numbers) {
+            if (i % 5 == 0) {
+                System.out.print(i + " ");
+            }
+        }
+        System.out.println();
+        System.out.println("Multiples of 7:");
+        for (int i: numbers) {
+            if (i % 7 == 0) {
+                System.out.print(i + " ");
+            }
+        }
+    }*/
+
     //5. Элементы, расположенные методом пузырька по убыванию модулей.
+    //Math.abs(); - method for absolute value
+    /*public static void main(String[] args) {
+        //Generating array
+        int[] numbers = new int[10];
+        System.out.println("Initial array:");
+        for (int i = 0; i < numbers.length; i++) {
+            numbers[i]=(int)(Math.random()*200 - 100);
+            System.out.print(numbers[i] + " ");
+
+        }
+        //array sorting
+        for (int j = 0; j < numbers.length;j++) {
+            for (int i = 0; i < numbers.length;i++) {
+                if (Math.abs(numbers[j]) > Math.abs(numbers[i])) {
+                    numbers[j] = numbers[j] + numbers[i];
+                    numbers[i] = numbers[j] - numbers[i];
+                    numbers[j] = numbers[j] - numbers[i];
+                }
+            }
+        }
+        //array output to console
+        System.out.println();
+        System.out.println("Sorted array:");
+        for (int i : numbers) {
+            System.out.print(i + " ");
+        }
+    }*/
+
     //6. Все трехзначные числа, в десятичной записи которых нет одинаковыхцифр.
+
+    public static void main(String[] args) {
+        //Generating array
+        int[] numbers = new int[10];
+        System.out.println("Initial array:");
+        for (int i = 0; i < numbers.length; i++) {
+            numbers[i]=(int)(Math.random()*200 - 100);
+            System.out.print(numbers[i] + " ");
+
+        }
+        //array sorting
+        for (int j = 0; j < numbers.length;j++) {
+            for (int i = 0; i < numbers.length;i++) {
+                if (Math.abs(numbers[j]) > Math.abs(numbers[i])) {
+                    numbers[j] = numbers[j] + numbers[i];
+                    numbers[i] = numbers[j] - numbers[i];
+                    numbers[j] = numbers[j] - numbers[i];
+                }
+            }
+        }
+        //array output to console
+        System.out.println();
+        System.out.println("Sorted array:");
+        for (int i : numbers) {
+            System.out.print(i + " ");
+        }
+    }
+
     //7. Наибольший общий делитель и наименьшее общее кратное этих чисел.
     //8. Простые числа.
     //9. Отсортированные числа в порядке возрастания и убывания.
