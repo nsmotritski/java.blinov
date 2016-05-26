@@ -1,18 +1,83 @@
 public class Chapter1v2 {
+
     //Вариант В
 
     //Ввести с консоли n целых чисел. На консоль вывести:
     //1. Четные и нечетные числа.
 
     /*public static void main(String[] args) {
-        int[] numbers = new int[];
+        int[] numbers = new int[10];
+        System.out.println("Исходный массив:");
         for (int i = 0; i < 10; i++) {
             numbers[i]=(int)(Math.random()*100);
+            System.out.print(numbers[i] + " ");
+        }
+        System.out.println();
+        System.out.println("Чётные:");
+        for (int i:numbers) {
+            if (i % 2 == 0) {
+                System.out.print(" " + i);
+            }
+        }
+        System.out.println();
+        System.out.println("Нечётные:");
+        for (int i:numbers) {
+            if (i % 2 == 1) {
+                System.out.print(" " + i);
+            }
         }
     }*/
 
     //2. Наибольшее и наименьшее число.
+
+    /*public static void main(String[] args) {
+        int[] numbers = new int[10];
+        System.out.println("Исходный массив:");
+        for (int i = 0; i < 10; i++) {
+            numbers[i]=(int)(Math.random()*100);
+            System.out.print(numbers[i] + " ");
+
+        }
+        int max = numbers[0], min = numbers[0];
+        for (int i: numbers) {
+            if (i > max) {
+                max = i;
+            }
+            if (i < min) {
+                min = i;
+            }
+        }
+        System.out.println();
+        System.out.println("Min = " + min);
+        System.out.println("Max = " + max);
+    }*/
+
     //3. Числа, которые делятся на 3 или на 9.
+
+    public static void main(String[] args) {
+        int[] numbers = new int[10];
+        System.out.println("Исходный массив:");
+        for (int i = 0; i < 10; i++) {
+            numbers[i]=(int)(Math.random()*100);
+            System.out.print(numbers[i] + " ");
+
+        }
+        System.out.println();
+        System.out.println("Multiples of 3:");
+        for (int i: numbers) {
+            if (i % 3 == 0 && i % 9 != 0) {
+                System.out.print(i + " ");
+            }
+        }
+        System.out.println();
+        System.out.println("Multiples of 9:");
+        for (int i: numbers) {
+            if (i % 9 == 0) {
+                System.out.print(i + " ");
+            }
+        }
+    }
+
     //4. Числа, которые делятся на 5 и на 7.
     //5. Элементы, расположенные методом пузырька по убыванию модулей.
     //6. Все трехзначные числа, в десятичной записи которых нет одинаковыхцифр.

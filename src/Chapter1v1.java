@@ -62,7 +62,7 @@ public class Chapter1v1 {
 
     /*6.Вывести фамилию разработчика, дату и время получения задания, а также
     дату и время сдачи задания.*/
-    public static void main(String[] args) {
+    /*public static void main(String[] args) {
         String devSurname = new String("Smotritski");
         System.out.println("Developer - " + devSurname);
         DateFormat df = new SimpleDateFormat("dd/MM/yy HH:mm:ss");
@@ -71,5 +71,5 @@ public class Chapter1v1 {
         Date dateTimeTaskFinished = new Date();
         System.out.println("Task Completed - " + df.format(dateTimeTaskFinished));
 
-    }
+    }*/
 }
