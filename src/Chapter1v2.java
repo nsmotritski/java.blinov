@@ -133,32 +133,33 @@ public class Chapter1v2 {
         }
     }*/
 
-    //6. Все трехзначные числа, в десятичной записи которых нет одинаковыхцифр.
+    //6. Все трехзначные числа, в десятичной записи которых нет одинаковых цифр.
 
     public static void main(String[] args) {
         //Generating array
         int[] numbers = new int[10];
+        int[] digits = new int[3];
+        int number;
         System.out.println("Initial array:");
         for (int i = 0; i < numbers.length; i++) {
-            numbers[i]=(int)(Math.random()*200 - 100);
+            numbers[i]=(int)(Math.random()*1000);
             System.out.print(numbers[i] + " ");
 
         }
+        System.out.println();
+        System.out.println("Numbers with unique digits:");
         //array sorting
-        for (int j = 0; j < numbers.length;j++) {
-            for (int i = 0; i < numbers.length;i++) {
-                if (Math.abs(numbers[j]) > Math.abs(numbers[i])) {
-                    numbers[j] = numbers[j] + numbers[i];
-                    numbers[i] = numbers[j] - numbers[i];
-                    numbers[j] = numbers[j] - numbers[i];
+        for (int i = 0; i < numbers.length; i++) {
+            number = numbers[i];
+            if ((numbers[i] >= 100) && (numbers[i] >= 999)) {
+                for (int j = 0; j < digits.length; j++) {
+                    digits[j] = number % 10;
+                    number = number/10;
+                }
+                if ((digits[0] != digits[1]) && (digits[0] != digits[2]) && (digits[1] != digits[2])) {
+                    System.out.print(numbers[i] + " ");
                 }
             }
-        }
-        //array output to console
-        System.out.println();
-        System.out.println("Sorted array:");
-        for (int i : numbers) {
-            System.out.print(i + " ");
         }
     }
 
