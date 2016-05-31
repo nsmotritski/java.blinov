@@ -151,7 +151,7 @@ public class Chapter1v2 {
         //array sorting
         for (int i = 0; i < numbers.length; i++) {
             number = numbers[i];
-            if ((numbers[i] >= 100) && (numbers[i] >= 999)) {
+            if ((number >= 100) && (number <= 999)) {
                 for (int j = 0; j < digits.length; j++) {
                     digits[j] = number % 10;
                     number = number/10;
