@@ -1,4 +1,15 @@
 public class Chapter1v2 {
+    //finding greatest common divisor using the algorithm of Euclid
+    public static int algorithmEuclid (int a, int b) {
+        while (a != b) {
+            if (a < b) {
+                b = b - a;
+            } else {
+                a = a - b;
+            }
+        }
+        return a;
+    }
 
     //Вариант В
 
@@ -135,7 +146,7 @@ public class Chapter1v2 {
 
     //6. Все трехзначные числа, в десятичной записи которых нет одинаковых цифр.
 
-    public static void main(String[] args) {
+    /*public static void main(String[] args) {
         //Generating array
         int[] numbers = new int[10];
         int[] digits = new int[3];
@@ -148,7 +159,7 @@ public class Chapter1v2 {
         }
         System.out.println();
         System.out.println("Numbers with unique digits:");
-        //array sorting
+        //finding numbers with unique digits
         for (int i = 0; i < numbers.length; i++) {
             number = numbers[i];
             if ((number >= 100) && (number <= 999)) {
@@ -161,9 +172,29 @@ public class Chapter1v2 {
                 }
             }
         }
-    }
+    }*/
 
     //7. Наибольший общий делитель и наименьшее общее кратное этих чисел.
+
+    public static void main(String[] args) {
+        //Generating array
+        int[] numbers = new int[2];
+        System.out.println("The two nummbers");
+        for (int i = 0; i < numbers.length; i++) {
+            numbers[i]=(int)(Math.random()*1000);
+            System.out.print(numbers[i] + " ");
+        }
+        int lcm, gcd;
+        gcd = algorithmEuclid(numbers[0],numbers[1]);
+        lcm = (numbers[0]*numbers[1])/gcd;
+        System.out.println();
+        System.out.println("greatest common divisor is: " + gcd);
+        System.out.println();
+        System.out.println("least common multiple is: " + lcm);
+
+        //array sorting
+    }
+
     //8. Простые числа.
     //9. Отсортированные числа в порядке возрастания и убывания.
     //10. Числа в порядке убывания частоты встречаемости чисел.
