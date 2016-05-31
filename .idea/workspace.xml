@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0b2964b6-92ad-4a5e-8af4-28b83c5bf0ac" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/BlinovTasks/Chapter1v2.class" afterPath="$PROJECT_DIR$/out/production/BlinovTasks/Chapter1v2.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Chapter1v2.java" afterPath="$PROJECT_DIR$/src/Chapter1v2.java" />
     </list>
     <ignored path="BlinovTasks.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -414,7 +412,14 @@
       <option name="project" value="LOCAL" />
       <updated>1464723370503</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Adding solution of v2 problem 7">
+      <created>1464726974850</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1464726974850</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -461,7 +466,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Adding solutions of problems 2 and 3 from variant B of Chapter 1" />
     <MESSAGE value="Adding solution of v2 problem 6" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding solution of v2 problem 6" />
+    <MESSAGE value="Adding solution of v2 problem 7" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding solution of v2 problem 7" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
