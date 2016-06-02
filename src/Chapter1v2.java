@@ -176,7 +176,7 @@ public class Chapter1v2 {
 
     //7. Наибольший общий делитель и наименьшее общее кратное этих чисел.
 
-    public static void main(String[] args) {
+    /*public static void main(String[] args) {
         //Generating array
         int[] numbers = new int[2];
         System.out.println("The two nummbers");
@@ -191,12 +191,62 @@ public class Chapter1v2 {
         System.out.println("greatest common divisor is: " + gcd);
         System.out.println();
         System.out.println("least common multiple is: " + lcm);
-
-        //array sorting
-    }
+    }*/
 
     //8. Простые числа.
+
+    /*public static void main(String[] args) {
+        //Generating array
+        int[] numbers = new int[] {65,37,719,55,981,521,727};
+        System.out.println("Initial array:");
+        for (int i = 0; i < numbers.length; i++) {
+            System.out.print(numbers[i] + " ");
+        }
+        boolean isPrime = true;
+        //looking for the prime numbers
+        System.out.println();
+        System.out.println("Prime numbers are: " );
+        for (int number : numbers) {
+            for (int i = 2; i < (number/2); i++) {
+                if (number % i == 0) {
+                    isPrime = false;
+                    break;
+                }
+            }
+            if (isPrime) {
+                System.out.print(number + " ");
+            }
+            isPrime = true;
+        }
+    }*/
+
     //9. Отсортированные числа в порядке возрастания и убывания.
+
+    public static void main(String[] args) {
+        //Generating array
+        int[] numbers = new int[] {65,37,719,55,981,521,727};
+        System.out.println("Initial array:");
+        for (int i = 0; i < numbers.length; i++) {
+            System.out.print(numbers[i] + " ");
+        }
+        boolean isPrime = true;
+        //looking for the prime numbers
+        System.out.println();
+        System.out.println("Prime numbers are: " );
+        for (int number : numbers) {
+            for (int i = 2; i < (number/2); i++) {
+                if (number % i == 0) {
+                    isPrime = false;
+                    break;
+                }
+            }
+            if (isPrime) {
+                System.out.print(number + " ");
+            }
+            isPrime = true;
+        }
+    }
+
     //10. Числа в порядке убывания частоты встречаемости чисел.
     //11. «Счастливые» числа.
     //12. Числа Фибоначчи: f0 = f1 = 1, f (n) = f (n–1) + f (n–2).
