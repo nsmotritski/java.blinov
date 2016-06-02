@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0b2964b6-92ad-4a5e-8af4-28b83c5bf0ac" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/BlinovTasks/Chapter1v2.class" afterPath="$PROJECT_DIR$/out/production/BlinovTasks/Chapter1v2.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Chapter1v2.java" afterPath="$PROJECT_DIR$/src/Chapter1v2.java" />
     </list>
@@ -38,8 +39,8 @@
       <file leaf-file-name="Chapter1v2.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Chapter1v2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="98">
-              <caret line="222" column="32" selection-start-line="222" selection-start-column="32" selection-end-line="222" selection-end-column="32" />
+            <state relative-caret-position="222">
+              <caret line="231" column="81" selection-start-line="231" selection-start-column="81" selection-end-line="231" selection-end-column="81" />
               <folding />
             </state>
           </provider>
@@ -112,6 +113,24 @@
         <subPane subId="Project Files">
           <PATH>
             <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="BlinovTasks">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="BlinovTasks">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="src">
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
@@ -402,7 +421,14 @@
       <option name="project" value="LOCAL" />
       <updated>1464726974850</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Adding solution of v2 problem 8">
+      <created>1464882558716</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1464882558716</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -450,14 +476,15 @@
     <MESSAGE value="Adding solutions of problems 2 and 3 from variant B of Chapter 1" />
     <MESSAGE value="Adding solution of v2 problem 6" />
     <MESSAGE value="Adding solution of v2 problem 7" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding solution of v2 problem 7" />
+    <MESSAGE value="Adding solution of v2 problem 8" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding solution of v2 problem 8" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="6" />
+      <option name="time" value="7" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -744,8 +771,8 @@
     <entry file="file://$PROJECT_DIR$/src/StaticMethods.java" />
     <entry file="file://$PROJECT_DIR$/src/Chapter1v2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="98">
-          <caret line="222" column="32" selection-start-line="222" selection-start-column="32" selection-end-line="222" selection-end-column="32" />
+        <state relative-caret-position="222">
+          <caret line="231" column="81" selection-start-line="231" selection-start-column="81" selection-end-line="231" selection-end-column="81" />
           <folding />
         </state>
       </provider>
