@@ -222,22 +222,22 @@ public class Chapter1v2 {
 
     //9. Отсортированные числа в порядке возрастания и убывания.
 
-    public static void main(String[] args) {
+    /*public static void main(String[] args) {
         //Generating array
         int[] numbers = new int[] {65,37,719,55,981,521,727};
         System.out.println("Initial array:");
         for (int i = 0; i < numbers.length; i++) {
             System.out.print(numbers[i] + " ");
         }
-//        array sorting according to https://en.wikipedia.org/wiki/Insertion_sort
+//      array sorting ascending according to https://en.wikipedia.org/wiki/Insertion_sort
         int num;
         for (int i = 1; i < numbers.length; i++) {
             if (numbers[i] < numbers [i-1]) {
                 num = numbers[i];
-                for (int j = i-1; j>0; j--) {
-                    if (num > numbers[j]) {
-                        numbers[j] = numbers[j-1];
-                        numbers[j-1] = num;
+                for (int j = i-1; j>=0; j--) {
+                    if (num < numbers[j]) {
+                        numbers[j+1] = numbers[j];
+                        numbers[j] = num;
                     }
                 }
             }
@@ -247,9 +247,73 @@ public class Chapter1v2 {
         for (int i: numbers) {
             System.out.print(i + " ");
         }
-    }
+//        array sorting descending according to https://en.wikipedia.org/wiki/Insertion_sort
+        int num2;
+        for (int i = 1; i < numbers.length; i++) {
+            if (numbers[i] > numbers [i-1]) {
+                num2 = numbers[i];
+                for (int j = i-1; j>=0; j--) {
+                    if (num2 > numbers[j]) {
+                        numbers[j+1] = numbers[j];
+                        numbers[j] = num2;
+                    }
+                }
+            }
+        }
+        System.out.println();
+        System.out.println("Array sorted descending: " );
+        for (int i: numbers) {
+            System.out.print(i + " ");
+        }
+    }*/
 
     //10. Числа в порядке убывания частоты встречаемости чисел.
+
+    public static void main(String[] args) {
+        //Generating array
+        int[] numbers = new int[] {65,37,719,55,981,521,727};
+        System.out.println("Initial array:");
+        for (int i = 0; i < numbers.length; i++) {
+            System.out.print(numbers[i] + " ");
+        }
+//      array sorting ascending according to https://en.wikipedia.org/wiki/Insertion_sort
+        int num;
+        for (int i = 1; i < numbers.length; i++) {
+            if (numbers[i] < numbers [i-1]) {
+                num = numbers[i];
+                for (int j = i-1; j>=0; j--) {
+                    if (num < numbers[j]) {
+                        numbers[j+1] = numbers[j];
+                        numbers[j] = num;
+                    }
+                }
+            }
+        }
+        System.out.println();
+        System.out.println("Array sorted ascending: " );
+        for (int i: numbers) {
+            System.out.print(i + " ");
+        }
+//        array sorting descending according to https://en.wikipedia.org/wiki/Insertion_sort
+        int num2;
+        for (int i = 1; i < numbers.length; i++) {
+            if (numbers[i] > numbers [i-1]) {
+                num2 = numbers[i];
+                for (int j = i-1; j>=0; j--) {
+                    if (num2 > numbers[j]) {
+                        numbers[j+1] = numbers[j];
+                        numbers[j] = num2;
+                    }
+                }
+            }
+        }
+        System.out.println();
+        System.out.println("Array sorted descending: " );
+        for (int i: numbers) {
+            System.out.print(i + " ");
+        }
+    }
+
     //11. «Счастливые» числа.
     //12. Числа Фибоначчи: f0 = f1 = 1, f (n) = f (n–1) + f (n–2).
     //13. Числа-палиндромы, значения которых в прямом и обратном порядке совпадают.
