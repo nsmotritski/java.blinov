@@ -278,21 +278,26 @@ public class Chapter1v2 {
         }
 //      creating new array that contains frequencies of the numbers together with the numbers
         int[][] frequencies = new int[numbers.length][numbers.length];
-        for (int i = 1; i < numbers.length; i++) {
-            if (numbers[i] < numbers [i-1]) {
-                num = numbers[i];
-                for (int j = i-1; j>=0; j--) {
-                    if (num < numbers[j]) {
-                        numbers[j+1] = numbers[j];
-                        numbers[j] = num;
-                    }
+        boolean updated = false;
+        for (int i = 0; i < numbers.length; i++) {
+            for (int j = i; j >= 0; j--) {
+                if (numbers[i] == frequencies[j][0]) {
+                    updated = true;
+                    frequencies[j][1] += 1;
                 }
+            }
+            if (!updated) {
+                frequencies[i][0] = numbers[i];
+                frequencies[i][1] = 1;
             }
         }
         System.out.println();
         System.out.println("Array sorted ascending: " );
-        for (int i: numbers) {
-            System.out.print(i + " ");
+        for (int i = 0; i < frequencies[1].length; i++) {
+            for (int j = 0; j < 2; j++) {
+                System.out.print(frequencies[i][j] + " ");
+            }
+            System.out.println();
         }
     }
 
