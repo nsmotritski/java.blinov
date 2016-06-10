@@ -11,6 +11,38 @@ public class Chapter1v2 {
         return a;
     }
 
+    public static void arrayInsertionSortAscending (int[] array) {
+        int num;
+        for (int i = 1; i < array.length; i++) {
+            if (array[i] < array[i - 1]) {
+                num = array[i];
+                for (int j = i - 1; j >= 0; j--) {
+                    if (num < array[j]) {
+                        array[j + 1] = array[j];
+                        array[j] = num;
+                    }
+                }
+            }
+        }
+    }
+
+    public static void arrayInsertionSortDescending (int[] array) {
+        int num2;
+        for (int i = 1; i < array.length; i++) {
+            if (array[i] > array [i-1]) {
+                num2 = array[i];
+                for (int j = i-1; j>=0; j--) {
+                    if (num2 > array[j]) {
+                        array[j+1] = array[j];
+                        array[j] = num2;
+                    }
+                }
+            }
+        }
+    }
+
+
+
     //Вариант В
 
     //Ввести с консоли n целых чисел. На консоль вывести:
@@ -222,7 +254,7 @@ public class Chapter1v2 {
 
     //9. Отсортированные числа в порядке возрастания и убывания.
 
-    /*public static void main(String[] args) {
+/*    public static void main(String[] args) {
         //Generating array
         int[] numbers = new int[] {65,37,719,55,981,521,727};
         System.out.println("Initial array:");
@@ -230,36 +262,16 @@ public class Chapter1v2 {
             System.out.print(numbers[i] + " ");
         }
 //      array sorting ascending according to https://en.wikipedia.org/wiki/Insertion_sort
-        int num;
-        for (int i = 1; i < numbers.length; i++) {
-            if (numbers[i] < numbers [i-1]) {
-                num = numbers[i];
-                for (int j = i-1; j>=0; j--) {
-                    if (num < numbers[j]) {
-                        numbers[j+1] = numbers[j];
-                        numbers[j] = num;
-                    }
-                }
-            }
-        }
+        arrayInsertionSortAscending(numbers);
+
         System.out.println();
         System.out.println("Array sorted ascending: " );
         for (int i: numbers) {
             System.out.print(i + " ");
         }
 //        array sorting descending according to https://en.wikipedia.org/wiki/Insertion_sort
-        int num2;
-        for (int i = 1; i < numbers.length; i++) {
-            if (numbers[i] > numbers [i-1]) {
-                num2 = numbers[i];
-                for (int j = i-1; j>=0; j--) {
-                    if (num2 > numbers[j]) {
-                        numbers[j+1] = numbers[j];
-                        numbers[j] = num2;
-                    }
-                }
-            }
-        }
+        arrayInsertionSortDescending(numbers);
+//        printing array to console
         System.out.println();
         System.out.println("Array sorted descending: " );
         for (int i: numbers) {
@@ -271,7 +283,7 @@ public class Chapter1v2 {
 
     public static void main(String[] args) {
         //Generating array
-        int[] numbers = new int[] {65,37,719,55,981,521,727};
+        int[] numbers = new int[] {55,37,719,55,981,37,727,55,727,727,727};
         System.out.println("Initial array:");
         for (int i = 0; i < numbers.length; i++) {
             System.out.print(numbers[i] + " ");
@@ -290,12 +302,32 @@ public class Chapter1v2 {
                 frequencies[i][0] = numbers[i];
                 frequencies[i][1] = 1;
             }
+            updated = false;
         }
+//        Sorting array containing frequencies by frequency descending
+        int num2,num1;
+        for (int i = 1; i < frequencies.length; i++) {
+            if (frequencies[i][1] > frequencies [i-1][1]) {
+                num1 = frequencies[i][0];
+                num2 = frequencies[i][1];
+                for (int j = i-1; j>=0; j--) {
+                    if (num2 > frequencies[j][1]) {
+                        frequencies[j+1][0] = frequencies[j][0];
+                        frequencies[j][0] = num1;
+                        frequencies[j+1][1] = frequencies[j][1];
+                        frequencies[j][1] = num2;
+                    }
+                }
+            }
+        }
+//        printing array to console
         System.out.println();
-        System.out.println("Array sorted ascending: " );
+        System.out.println("Array sorted by frequency descending: " );
         for (int i = 0; i < frequencies[1].length; i++) {
             for (int j = 0; j < 2; j++) {
-                System.out.print(frequencies[i][j] + " ");
+                if (frequencies[i][0] != 0) {
+                    System.out.print(frequencies[i][j] + " ");
+                }
             }
             System.out.println();
         }
